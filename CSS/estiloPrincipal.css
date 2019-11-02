@@ -1,0 +1,44 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.involucro {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#mapa {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+}
+
+#recipienteDeGrafico {
+	display: none;
+	position: absolute;
+	padding: 1px;
+	top: 100px;
+	left: 18px;
+	background: white;
+	height: 220px;
+	width: 300px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#fechaGrafico {
+  position: relative;
+  left:288px;
+  width: 12px;
+}
+
+#fechaGrafico:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: .9;
+  	background: red;
+  	color: white;
+}

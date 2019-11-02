@@ -1,0 +1,32 @@
+<!--index.html
+  	Autor: Caio Gomes da Silva Zimmerman
+  	Projeto: Desenvolvimento de um sistema de monitoramento de ruído urbano de baixo custo
+  	Descrição: Página principal da interface do usuário onde é possível visualizar o mapa com os sensores.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sistema de Monitoramento de Ruído Urbano</title>
+		<link rel="stylesheet" type="text/css" href="CSS/estiloPrincipal.css">
+		<script src="Javascript/jquery-3.4.1.min.js"></script>
+		<script src="Javascript/scriptPrincipal.js"></script>	
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	</head>
+	<body>
+		<div id="involucro">
+			<div id="mapa">
+				<!-- Insira a API KEY do Google Maps aqui -->
+				<script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap"></script>	
+			</div>
+			<div id="recipienteDeGrafico">
+				<div id="fechaGrafico" onclick="fecharGrafico()">X</div>
+				<div id="grafico"></div>
+			</div>			
+		</div>
+		<form id="formularioDeRegistros" method="post" action="records.php">
+			<input type="hidden" name="ID" value="a" />
+		</form>
+	</body>
+</html>
